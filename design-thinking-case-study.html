@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Salt Grant Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <script src="js/designthinkingCS.js" type="text/javascript"></script>
+
+    <script>
+        // Validation Function
+        function isNumber(evt) {
+            var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+            if (iKeyCode != 46 && iKeyCode != 45 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+        <a class="navbar-brand" href="index.html">
+            <img src="css/images/WATCH_LEARN_white.png" length="100" width="250">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator-main.html">FINANCIAL CALCULATORS</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="design-thinking-case-study.html">DESIGN THINKING CASE STUDIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lean-management-case-study.html">LEAN MANAGEMENT CASE STUDIES</a>
+                </li>
+            </ul>
+        </div>
+        <img class="sitlogo" src="css/images/sitlogo_edited.jpg" length="0" width="150">
+    </nav>
+    <!-- /Navigation -->
+
+    <body>
+
+        <!-- Question Section Part A -->
+        <section>
+            <img src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study_design thinking case study.jpg"
+                width="100%" height="100%" id="textblock">
+            <row>
+                <div class="col-lg-1 mx-auto">
+                    <a href="#studentAnswer"><button type="button" class="btn btn-primary btn-md"
+                            id="evaluateBtn">Evaluate!</button>
+                    </a>
+                </div>
+            </row>
+        </section>
+        <!-- /Question Section Part A-->
+
+        <!-- User Answer Section Part A -->
+        <section id="studentAnswer">
+            <img src="css/images/Design Thinking Case Study/Edited Pictures/1_New.jpg" width="100%" height="100%"
+                id="textblock">
+            <div class="text-center">
+                <button type="button" data-toggle="modal" data-target="#modal_show_solution_dtcs_partA"
+                    class="btn btn-info" id="show_solution_dtcs_partA">Show Overall Solution for Part
+                    A</button>
+            </div>
+
+            <!-- Solution for Part A -->
+            <div id="dtcs_solution_partA" class="col-lg-8 mx-auto" style="display:none">
+                <br>
+                <text>The NPV is positive for both EasyTech and EasyTech X.<br /><br />
+
+                    EasyTech's IRR is 5.60% - this is higher than the company's cost of funding (5%). <br />
+                    EasyTechX's IRR is 7.32% - this is higher than the company's cost of funding (5%).<br /><br />
+
+                    The Profitability Index of EasyTech (1.03) is more than 1.<br />
+                    The Profitability Index of EasyTechX (1.13) is more than 1.<br />
+                    They will generate higher returns than the investment required.<br /><br />
+
+                    The Payback Period for EasyTech is 7.5 years which is lower than the company's required Payback
+                    Period of 10 years.<br />
+                    The Payback Period of EasyTechX is 9.60 years which is lower than the company's required Payback
+                    Period of 10 years.<br />
+
+                </text>
+                <div class="col-lg-4 mx-auto text-center">
+                    <a href="#dtcs_question_partB"><button type="button" id="show-dtcs-solution-partB"
+                            class="btn btn-primary btn-md ">Go to Part B ↓</button>
+                    </a>
+                </div>
+            </div>
+            <!-- Modal Confirmation -->
+            <div class="modal fade" id="modal_show_solution_dtcs_partA" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true" id="confirm-show-dtcs-partA">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Overall Solution</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body-custom">
+                            Make sure you attempt the question before looking!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                id="hide-dtcs-solution-partA">Hide Solution</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-primary btn-ok"
+                                id="show-dtcs-solution-partA">Show
+                                Solution</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item xs">
+                    <a class="nav-link-custom" data-toggle="pill" href="#NPV"><img
+                            src="css/images/Design Thinking Case Study/Edited Pictures/NPV.jpg" width="60%" height="60%"
+                            id="nav-icon-npv" /></a>
+                </li>
+                <li class="nav-item xs">
+                    <a class="nav-link-custom" data-toggle="pill" href="#IRR"><img
+                            src="css/images/Design Thinking Case Study/Edited Pictures/IRR.jpg" width="65%" height="65%"
+                            id="nav-icon-irr" /></a>
+                </li>
+                <li class="nav-item xs">
+                    <a class="nav-link-custom" data-toggle="pill" href="#PI"><img
+                            src="css/images/Design Thinking Case Study/Edited Pictures/PI.jpg" width="65%" height="65%"
+                            id="nav-icon-pi" /></a>
+                </li>
+                <li class="nav-item xs">
+                    <a class="nav-link-custom" data-toggle="pill" href="#PP"><img
+                            src="css/images/Design Thinking Case Study/Edited Pictures/PP.jpg" width="66%" height="66%"
+                            id="nav-icon-pp" /></a>
+                </li>
+            </ul>
+
+            <div class="tab-content ">
+                <div id="NPV" class="tab-pane fade in active">
+                    <br>
+                    <div class="col-lg-10 mx-auto">
+                        <span class="tab-space" style="color: #D3D3D3">NET PRESENT VALUE</span>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="input-group-text-addon-primary">Initial
+                                        Investment:</span>
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Discount Rate:</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-8 mx-auto" id="cashFlow">
+                            CASH FLOW
+                        </div>
+
+
+                        <div class="form-group custom-input-year npv" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 1: $</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year npv" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 2: $</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year npv" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 3: $</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year npv" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 4: $</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year npv" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 5: $</span>
+                                </div>
+                                <input type="text" class="form-control npv"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="addRowsHereNpv">
+                        </div>
+                        <div class="col-lg-8 mx-auto text-right" id="printAnswersHereNpv">
+                        </div>
+
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-primary btn-md float" id="add_year_npv">ADD
+                                YEAR</button>
+                            <button type="button" class="btn btn-primary btn-md float" id="remove_year_npv">REMOVE
+                                YEAR</button>
+                            <button type="button" class="btn btn-primary btn-md float-right"
+                                id="calculate_npv">CALCULATE</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-info btn-md float" id="show_solution_npv">Show
+                                Solution</button>
+                            <button type="button" class="btn btn-info btn-md float-right" id="hide_solution_npv">Hide
+                                Solution</button>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 mx-auto">
+                            <img src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study NPV Solution.jpg"
+                                width="100%" height="100%" id="solution_dtcs_npv" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="IRR" class="tab-pane fade">
+                    <div class="col-lg-10 mx-auto">
+                        <span class="tab-space" style="color: #D3D3D3">INTERNAL RATE OF
+                            RETURN</span>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="input-group-text-addon-primary">Initial
+                                        Investment:</span>
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row col-lg-8 mx-auto" id="cashFlow">
+                            CASH FLOW
+                        </div>
+
+                        <div class="form-group custom-input-year irr" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 1: $</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year irr" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 2: $</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year irr" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 3: $</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year irr" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 4: $</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group custom-input-year irr" id="custom-input-year">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Year 5: $</span>
+                                </div>
+                                <input type="text" class="form-control irr"
+                                    onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="addRowsHereIrr">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group row col-lg-8 mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Guess:</span>
+                                </div>
+                                <input type="text" class="form-control irr guess-option" placeholder="Optional"
+                                    id="guess-optional irr" onkeypress="javascript:return isNumber(event)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mx-auto text-right" id="printAnswersHereIrr">
+                        </div>
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-primary btn-md float" id="add_year_irr">ADD
+                                YEAR</button>
+                            <button type="button" class="btn btn-primary btn-md float" id="remove_year_irr">REMOVE
+                                YEAR</button>
+                            <button type="button" class="btn btn-primary btn-md float-right"
+                                id="calculate_irr">CALCULATE</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-info btn-md float" id="show_solution_irr">Show
+                                Solution</button>
+                            <button type="button" class="btn btn-info btn-md float-right" id="hide_solution_irr">Hide
+                                Solution</button>
+                        </div>
+                        <br>
+                        <div class="col-lg-10 mx-auto">
+                            <img src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study IRR Solution.jpg"
+                                width="100%" height="100%" id="solution_dtcs_irr" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PI" class="tab-pane fade">
+                    <div class="col-lg-10 mx-auto">
+                        <span class="tab-space" style="color: #D3D3D3">BENEFIT-COST RATIO (PROFITABILITY
+                            INDEX)</span>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="form-group-inline col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center bcr"
+                                    placeholder="PRESENT VALUE OF CASH FLOW"
+                                    onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10 offset-md-2">
+                                <span class="separator" style="font-size: 30px">
+                                    Profitability Index = &emsp; &nbsp;
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center bcr"
+                                    placeholder="INVESTMENT REQUIRED" onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-8 mx-auto" id="printAnswersHere">
+                    </div>
+                    <div class="row col-lg-14">
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-primary btn-md float-right"
+                                id="calculate_bcr">CALCULATE</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row col-lg-14 ">
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-info btn-md float offset-md-1"
+                                id="show_solution_pi">Show
+                                Solution</button>
+                            <button type="button" class="btn btn-info btn-md float-right" id="hide_solution_pi">Hide
+                                Solution</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-9 mx-auto">
+                        <img src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study PI Solution.jpg"
+                            width="100%" height="100%" id="solution_dtcs_pi" style="display: none;">
+                    </div>
+                </div>
+
+                <div id="PP" class="tab-pane fade">
+                    <div class="col-lg-10 mx-auto">
+                        <span class="tab-space" style="color: #D3D3D3">PAYBACK PERIOD</span>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <span class="tab-space" style="color: #D3D3D3">EQUAL CASH FLOW</span>
+                            <div class="form-group-inline col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center ecf"
+                                    placeholder="INVESTMENT REQUIRED" onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11 offset-md-1">
+                                <span class="separator" style="font-size: 25px">
+                                    Payback Period = &emsp; &emsp; &emsp;&emsp;&emsp;&nbsp;
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center ecf"
+                                    placeholder="CASH FLOW PER PERIOD" onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 offset-md-8" id="printAnswersHereECF">
+                        </div>
+                        <br>
+                        <div class="col-lg-10 mx-auto">
+                            <button type="button" class="btn btn-primary btn-md float-right"
+                                id="calculate_ecf">CALCULATE</button>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <span class="tab-space" style="color: #D3D3D3">NON-EQUAL CASH FLOW</span>
+                            <div class="form-group-inline col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center necf"
+                                    placeholder="UNRECOVERED INVESTMENT AT START OF PERIOD"
+                                    onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-11 offset-md-1">
+                                <span class="separator" style="font-size: 25px">
+                                    Payback Period =
+                                    <span class="row-fluid">
+                                        <textarea class="form-control text-center necf" rows="3"
+                                            placeholder="PERIOD BEFORE FULL RECOVERY OF INVESTMENT"
+                                            onkeypress="javascript:return isNumber(event)"></textarea>
+                                    </span>
+                                    &nbsp;+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group-inline col-lg-5 offset-md-6">
+                                <input type="text" class="form-control text-center necf"
+                                    placeholder="CASH FLOW FOR THE PERIOD"
+                                    onkeypress="javascript:return isNumber(event)">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-2 offset-md-8" id="printAnswersHereNECF">
+                    </div>
+                    <br>
+                    <div class="row col-lg-14">
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-primary btn-md float-right"
+                                id="calculate_necf">CALCULATE</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row col-lg-14 ">
+                        <div class="col-lg-8 mx-auto">
+                            <button type="button" class="btn btn-info btn-md float offset-md-1"
+                                id="show_solution_pp">Show
+                                Solution</button>
+                            <button type="button" class="btn btn-info btn-md float-right" id="hide_solution_pp">Hide
+                                Solution</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-lg-10 mx-auto">
+                        <img src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study PP Solution.jpg"
+                            width="100%" height="100%" id="solution_dtcs_pp" style="display: none;">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /User Answer Section -->
+
+        <!-- User Answer Section Part B -->
+        <div id="dtcs_question_partB" class="col-lg-10 mx-auto" style="display: none;">
+            <text>(b) Assume that Tom managed to get funding for investments in both EasyTech
+                and EastTechX, and both technologies can generate returns as shown below.</br></br>
+                What are the Accounting Rate of Return (ARR) for both projects?</br>
+            </text>
+            <br>
+            <table style="width:100%">
+                EasyTech
+                <tr>
+                    <th rowspan="2" style="text-align:center">Year</th>
+                    <th rowspan="2" style="text-align:center">Earnings ($) </br> (After Tax & Depreciation)</th>
+                    <th colspan="2" style="text-align:center">Book Value </th>
+                    <th rowspan="2" style="text-align:center">Average Book Value ($) </th>
+                </tr>
+                <tr>
+                    <td style="text-align:right">January 1 ($)</td>
+                    <td style="text-align:right">December 31 ($)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2024</td>
+                    <td class="currency">3,000,000.00</td>
+                    <td class="currency">15,000,000</td>
+                    <td class="currency">14,000,000</td>
+                    <td class="currency">14,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2025</td>
+                    <td class="currency">4,000,000.00</td>
+                    <td class="currency">14,000,000</td>
+                    <td class="currency">13,000,000</td>
+                    <td class="currency">13,500,000</td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center">2026</td>
+                    <td class="currency">5,000,000.00</td>
+                    <td class="currency">13,000,000</td>
+                    <td class="currency">12,000,000</td>
+                    <td class="currency">12,500,000</td>
+
+
+                </tr>
+                <tr>
+                    <td style="text-align:center">2027</td>
+                    <td class="currency">6,000,000.00</td>
+                    <td class="currency">12,000,000</td>
+                    <td class="currency">11,000,000</td>
+                    <td class="currency">11,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2028</td>
+                    <td class="currency">7,000,000.00</td>
+                    <td class="currency">11,000,000</td>
+                    <td class="currency">10,000,000</td>
+                    <td class="currency">10,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2029</td>
+                    <td class="currency">8,000,000.00</td>
+                    <td class="currency">10,000,000</td>
+                    <td class="currency">9,000,000</td>
+                    <td class="currency">9,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2030</td>
+                    <td class="currency">9,000,000.00</td>
+                    <td class="currency">9,000,000</td>
+                    <td class="currency">8,000,000</td>
+                    <td class="currency">8,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2031</td>
+                    <td class="currency">10,000,000.00</td>
+                    <td class="currency">8,000,000</td>
+                    <td class="currency">7,000,000</td>
+                    <td class="currency">7,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2032</td>
+                    <td class="currency">11,000,000.00</td>
+                    <td class="currency">7,000,000</td>
+                    <td class="currency">6,000,000</td>
+                    <td class="currency">6,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2033</td>
+                    <td class="currency">12,000,000.00</td>
+                    <td class="currency">6,000,000</td>
+                    <td class="currency">5,000,000</td>
+                    <td class="currency">5,500,000</td>
+                </tr>
+                <tr class="currency-red">
+                    <td style="text-align:center">Average ($)</td>
+                    <td class="currency">7,500,000.00</td>
+                    <td class="currency">10,500,000</td>
+                    <td class="currency">9,500,000</td>
+                    <td class="currency">10,000,000</td>
+                </tr>
+            </table>
+
+            <table style="width:100%">
+                EasyTechX
+                <tr>
+                    <th rowspan="2" style="text-align:center">Year</th>
+                    <th rowspan="2">Earnings ($) </br> (After Tax & Depreciation)</th>
+                    <th colspan="2">Book Value </th>
+                    <th rowspan="2">Average Book Value ($) </th>
+                </tr>
+                <tr>
+                    <td style="text-align:right">January 1 ($)</td>
+                    <td style="text-align:right">December 31 ($)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2020</td>
+                    <td class="currency">2,000,000.00</td>
+                    <td class="currency">15,000,000</td>
+                    <td class="currency">14,000,000</td>
+                    <td class="currency">14,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2021</td>
+                    <td class="currency">3,000,000.00</td>
+                    <td class="currency">14,000,000</td>
+                    <td class="currency">13,800,000</td>
+                    <td class="currency">13,900,000</td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center">2022</td>
+                    <td class="currency">4,000,000.00</td>
+                    <td class="currency">13,800,000</td>
+                    <td class="currency">12,400,000</td>
+                    <td class="currency">13,100,000</td>
+
+
+                </tr>
+                <tr>
+                    <td style="text-align:center">2023</td>
+                    <td class="currency">5,000,000.00</td>
+                    <td class="currency">12,400,000</td>
+                    <td class="currency">12,300,000</td>
+                    <td class="currency">12,350,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2024</td>
+                    <td class="currency">6,000,000.00</td>
+                    <td class="currency">12,300,000</td>
+                    <td class="currency">12,100,000</td>
+                    <td class="currency">12,200,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2025</td>
+                    <td class="currency">7,000,000.00</td>
+                    <td class="currency">12,100,000</td>
+                    <td class="currency">11,000,000</td>
+                    <td class="currency">11,550,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2026</td>
+                    <td class="currency">8,000,000.00</td>
+                    <td class="currency">11,000,000</td>
+                    <td class="currency">10,600,000</td>
+                    <td class="currency">10,800,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2027</td>
+                    <td class="currency">9,000,000.00</td>
+                    <td class="currency">10,600,000</td>
+                    <td class="currency">10,000,000</td>
+                    <td class="currency">10,300,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2028</td>
+                    <td class="currency">10,000,000.00</td>
+                    <td class="currency">10,000,000</td>
+                    <td class="currency">9,000,000</td>
+                    <td class="currency">9,500,000</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">2029</td>
+                    <td class="currency">11,000,000.00</td>
+                    <td class="currency">9,000,000</td>
+                    <td class="currency">5,000,000</td>
+                    <td class="currency">7,000,000</td>
+                </tr>
+                <tr class="currency-red">
+                    <td style="text-align:center">Average ($)</td>
+                    <td class="currency">6,500,000.00</td>
+                    <td class="currency">12,020,000</td>
+                    <td class="currency">11,020,000</td>
+                    <td class="currency">11,520,000</td>
+                </tr>
+            </table>
+
+            <span class="tab-space" style="color: #D3D3D3">ACCOUNTING RATE OF RETURN</span>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="form-group-inline col-lg-4 offset-md-2">
+                    <input type="text" class="form-control text-center top" placeholder="AVERAGE ANNUAL EARNINGS"
+                        onkeypress="javascript:return isNumber(event)">
+                </div>
+                <div class="text offset-md-3" style="font-weight: bold;">100%</div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-md-2">
+
+                    <span class="separatorAll" style="font-size: 25px">
+                        &emsp;&emsp;&emsp; X &emsp;
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-4 offset-md-2">
+                    <input type="text" class="form-control text-center top" placeholder="INITIAL INVESTMENT IN PROJECT"
+                        onkeypress="javascript:return isNumber(event)">
+                </div>
+                <div class="text offset-md-3" style="font-weight: bold;">1</div>
+
+            </div>
+            <div class="col-lg-3 offset-md-8" id="printAnswersHereTOP">
+            </div>
+            <br>
+            <div class="col-lg-10 mx-auto">
+                <button type="button" class="btn btn-primary btn-md float-right" id="calculate_top">CALCULATE</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="form-group-inline col-lg-4 offset-md-2">
+                    <input type="text" class="form-control text-center btm" placeholder="AVERAGE ANNUAL EARNINGS"
+                        onkeypress="javascript:return isNumber(event)">
+                </div>
+                <div class="text offset-md-3" style="font-weight: bold;">100%</div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-md-2">
+
+                    <span class="separatorAll" style="font-size: 25px">
+                        &emsp;&emsp;&emsp; X &emsp;
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-4 offset-md-2">
+                    <input type="text" class="form-control text-center btm"
+                        placeholder="AVERAGE BOOK VALUE OF A PROJECT" onkeypress="javascript:return isNumber(event)">
+                </div>
+                <div class="text offset-md-3" style="font-weight: bold;">1</div>
+
+            </div>
+            <div class="col-lg-3 offset-md-8" id="printAnswersHereBTM">
+            </div>
+            <br>
+            <div class="col-lg-10 mx-auto">
+                <button type="button" class="btn btn-primary btn-md float-right" id="calculate_btm">CALCULATE</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <span class="col-lg-16 offset-md-1" id="fa-custom-font-size">
+                    <h4><span id="custom-font-color">DECISION RULE: </span> ACCEPT IF ARR IS GREATER THAN MINIMUM
+                        ACCEPTABLE ARR
+                    </h4>
+                </span>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="button" data-target="#show_solution_dtcs_partB_EasyTech" class="btn btn-dark"
+                    id="show_solution_dtcs_partB_EasyTech">Show/Hide EasyTech Solution</button>
+                <button type="button" data-target="#show_solution_dtcs_partB_EasyTechX" class="btn btn-dark"
+                    id="show_solution_dtcs_partB_EasyTechX">Show/Hide EasyTechX Solution</button>
+            </div>
+
+        </div>
+        <!-- /User Answer Section Part B -->
+
+        <!-- Solutions Section -->
+        <section class="col-lg-8 mx-auto">
+            <img class="dtcs_solutions_partB"
+                src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study Part b EasyTech Solution.jpg"
+                width="100%" height="100%" id="solution_dtcs_partB_EasyTech" style="display: none;">
+            <br>
+            <img class="dtcs_solutions_partB"
+                src="css/images/Design Thinking Case Study/Edited Pictures/Design Thinking Case Study Part b EasyTechX Solution.jpg"
+                width="100%" height="100%" id="solution_dtcs_partB_EasyTechX" style="display: none;">
+        </section>
+        <!-- /Solutions Section -->
+
+
+    </body>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark black">
+        <div class="container">
+            <p class="m-0 text-center text-white">SUBSCRIBE TO GET UPDATES ON NEW VIDEO TUTORIALS!</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
