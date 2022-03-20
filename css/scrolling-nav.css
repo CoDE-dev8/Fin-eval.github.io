@@ -1,0 +1,232 @@
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 50px 0;  
+}
+
+.nav-link {
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 0;
+  padding: 0 !important;
+  }
+
+  .nav-link-custom{ 
+    margin-left: 40px;
+  }
+
+
+#intro {
+    background-image: url(./images/Title_page_background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 100px !important;
+  }
+
+
+#about {
+    background-image: url("./images/Homepage illustrations/Artboard 7.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #textBlock{
+    margin-top: "50px";
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #lmcs_overall_solution{
+    margin-bottom: 50px;
+  }
+
+  #textVideo{
+    margin-left: -50 !important;
+    margin-right: -50 !important;
+  }
+
+  #videoWithText{
+    margin-right: -50;
+  }
+
+  #video1{
+    border: 6px solid black;
+  }
+
+  #Artboard_8{
+    width: 30%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  #Artboard_9_1{
+    width: 80%;
+    height: auto;
+    margin-right: 30px;
+  }
+
+  #Artboard_9_2{
+    width: 80%;
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  #Artboard_9_3{
+    width: 80%;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  #Artboard_9_4{
+    width: 100%;
+    height: auto;
+    padding-right: 50px;
+  }
+
+  #Artboard_9_5{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+  }
+
+  #custom-font-color{
+    color: blue;
+  }
+  .custom-text{
+    padding: 0px 0px 0px 0px !important;
+    margin-left: 0px !important;
+    margin: 0px !important;
+  }
+
+  .bg-black{
+    background-color: black;
+  }
+  .custom-textblock{
+    font-size: 65pt !important;
+    line-height: 0.9;
+    font-weight: 400;
+    padding-left: 0 !important;
+  }
+
+  #calc-select{
+    padding: 100px;
+  }
+
+  #discount-calc-select{
+    padding: 30px;
+    margin-right: 20px;
+  }
+
+  span.tab-space {
+    padding-left:5em;
+  }
+
+#cashFlow{
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.input-group-text {
+  color: white;
+  background-color: #007bff;
+}
+
+#printAnswersHere{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator::after {
+  margin-left: .25em;
+}
+
+.separatorAll {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.separatorAll::before, .separatorAll::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+.separatorAll::before {
+  margin-right: .25em;
+}
+.separatorAll::after {
+  margin-left: .25em;
+}
+
+#answer-choice{
+  margin-left: 5%;
+}
+
+.width-1264px{
+  max-width: 1264px;
+}
+
+ul.nav.nav-pills .nav-item{
+  margin-right: 0;
+  width: 20%;
+  height: 20%;
+}
+
+.modal-body-custom{
+  color: black;
+  padding: 15px;
+}
+
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+table, th, td {
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+
+.currency {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.currency-red {
+  color: red;
+}
+
+.currency:before {
+  content: "$";
+  float: left;
+  padding-right: 4px;
+}
+
+.dtcs_solutions_partB{
+  border: 1px solid;
+}
+
+#show_lmcs_overall_solution{
+  margin-bottom: 30px;
+}
